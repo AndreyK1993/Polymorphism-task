@@ -1,6 +1,6 @@
 package polymorphism;
 
-public class Div {
+public abstract class Div {
 
     public double x;
     public double y;
@@ -9,7 +9,5 @@ public class Div {
         this.x=x;
         this.y=y;
     }
-    public double calcResult() {
-        return 0;
-    }
+    public abstract double calcResult();
 }
