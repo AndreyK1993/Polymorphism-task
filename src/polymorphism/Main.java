@@ -15,18 +15,9 @@ public class Main {
         System.out.print("Enter number 2: ");
         double y = scanner.nextDouble();
 
-        Div DivA=new DivA(x,y);
-        Div DivB=new DivB(x,y);
+        DivController controller = new DivController();
 
-        double resultA = DivA.calcResult();
-        double resultB = DivB.calcResult();
-
-        String roundResultA = Rounder.roundValue(resultA);
-        String roundResultB = Rounder.roundValue(resultB);
-
-
-        System.out.println("Result from Device A: " + roundResultA +
-                "\nResult from Device B: " + roundResultB);
-
+        controller.runApp(x, y);
+        
     }
 }
