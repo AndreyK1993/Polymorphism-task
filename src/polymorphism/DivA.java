@@ -1,7 +1,5 @@
 package polymorphism;
 
-import polymorphism.Div;
-
 public class DivA extends Div {
 
     public DivA(double x, double y){

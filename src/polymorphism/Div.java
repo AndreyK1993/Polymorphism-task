@@ -1,7 +1,5 @@
 package polymorphism;
 
-
-
 public class Div {
 
     public double x;

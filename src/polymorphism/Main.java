@@ -1,11 +1,19 @@
 package polymorphism;
 
+import java.util.Locale;
+
+import java.util.Scanner;
+
 public class Main {
-    static String roundResultA;
-    static String roundResultB;
+
     public static void main (String[] args){
-        double x=10;
-        double y=5;
+
+        Scanner scanner = new Scanner(System.in);
+        scanner.useLocale(Locale.ENGLISH);
+        System.out.print("Enter number 1: ");
+        double x = scanner.nextDouble();
+        System.out.print("Enter number 2: ");
+        double y = scanner.nextDouble();
 
         Div DivA=new DivA(x,y);
         Div DivB=new DivB(x,y);
@@ -19,5 +27,6 @@ public class Main {
 
         System.out.println("Result from Device A: " + roundResultA +
                 "\nResult from Device B: " + roundResultB);
+
     }
 }
